@@ -39,7 +39,7 @@ export default function City({ history, location }) {
           {forecast ? `${forecast.name}, ${forecast.sys.country}` : 'Loading...'}
         </h1>
       </header>
-      <ForecastContainer forecast={forecast} />
+      <ForecastContainer forecast={null} />
     </>
   )
 }

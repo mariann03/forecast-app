@@ -1,8 +1,3 @@
-.map-max-height img {
-  height: 200px !important;
-  width: 200px !important;
-}
-
 .centered-forecast-table {
   margin: auto;
   margin-top: 18px;
@@ -17,5 +12,5 @@ figure.is-rounded img {
   border-radius: 4px;
 }
 .column.min-width-column {
-  min-width: 270px
+  min-width: 250px;
 }

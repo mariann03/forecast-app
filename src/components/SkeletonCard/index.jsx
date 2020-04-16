@@ -8,11 +8,11 @@ export default function WeatherCard() {
         <div className="column">
           <div className="box image-skeleton skeleton-background margin-auto" />
         </div>
-        <div className="column">
-          <div className="box skeleton text-1 skeleton-background" />
-          <div className="box skeleton text-2 skeleton-background" />
-          <div className="box skeleton text-3 skeleton-background" />
-          <div className="box skeleton text-4 skeleton-background" />
+        <div className="column max-width">
+          <div className="box skeleton text-1 skeleton-background max-width" />
+          <div className="box skeleton text-2 skeleton-background max-width" />
+          <div className="box skeleton text-3 skeleton-background max-width" />
+          <div className="box skeleton text-4 skeleton-background max-width" />
         </div>
       </div>
     </div>

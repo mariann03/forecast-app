@@ -12,7 +12,7 @@ export default function ForecastCard({ forecast }) {
     <div className="box common-background">
       <div className="columns is-mobile is-multiline">
         <div className="column min-width min-width-column">
-          <figure className="image map-max-height is-rounded">
+          <figure className="image is-rounded">
             <Map className="margin-auto" {...coord} />
           </figure>
         </div>

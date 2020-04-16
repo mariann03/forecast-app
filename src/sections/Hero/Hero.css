@@ -9,7 +9,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   background: url('https://source.unsplash.com/1920x1080/?sky,weather');
   background-repeat: no-repeat;
   background-size: cover;

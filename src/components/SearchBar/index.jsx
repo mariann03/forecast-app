@@ -46,7 +46,12 @@ function Item({ name, search, address, locationId, onClick, isActive }) {
         {name}
       </Link>
       {search && (
-        <button onClick={handleOnRemove} type="button" className="icon is-right no-background no-border" alt="search">
+        <button
+          onClick={handleOnRemove}
+          type="button"
+          className="icon is-right no-background no-border centered has-text-danger"
+          alt="search"
+        >
           <i className="fas fa-trash-alt" />
         </button>
       )}

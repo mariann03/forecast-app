@@ -10,6 +10,19 @@
   border-radius: 10px;
 }
 
+.night .hero .common-background input {
+  background: white;
+}
+
+.night .hero input {
+  background: white;
+  color: inherit;
+}
+
+.night .hero input::placeholder {
+  color: #c2c2c2;
+}
+
 .night input {
   color: white;
 }
@@ -22,6 +35,10 @@ button.icon,
 a.icon {
   cursor: pointer;
   pointer-events: all !important;
+}
+
+button.icon.centered {
+  height: 100% !important;
 }
 
 .link-item {
