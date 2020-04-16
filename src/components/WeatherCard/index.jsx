@@ -12,8 +12,8 @@ export default function WeatherCard({ forecast }) {
   const tempMaxByType = getAllFromKelvin(forecast.main.temp_max)
 
   return (
-    <div className="box common-background">
-      <div className="columns is-mobile is-multiline">
+    <div className="box common-background full-height">
+      <div className="columns is-mobile is-multiline is-marginless is-vcentered half-height">
         <div className="column">
           <figure className="image is-128x128 margin-auto">
             <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} alt={weather.description} />
@@ -24,14 +24,14 @@ export default function WeatherCard({ forecast }) {
           <h3 className="subtitle is-4 has-text-grey-light">{tempByType.fahrenheit}ºF</h3>
         </div>
       </div>
-      <div className="columns is-mobile">
+      <div className="columns is-mobile is-marginless is-vcentered half-height">
         <div className="column has-text-centered">
-          <p className="has-text-grey-light">Min: {tempMinByType.celcius} ºC</p>
-          <p className="has-text-grey-light">Min: {tempMinByType.fahrenheit} ºF</p>
+          <p className="has-text-grey-light no-wrap">Min: {tempMinByType.celcius} ºC</p>
+          <p className="has-text-grey-light no-wrap">Min: {tempMinByType.fahrenheit} ºF</p>
         </div>
         <div className="column has-text-centered">
-          <p className="has-text-grey-light">Max: {tempMaxByType.celcius} ºC</p>
-          <p className="has-text-grey-light">Max: {tempMaxByType.fahrenheit} ºF</p>
+          <p className="has-text-grey-light no-wrap">Max: {tempMaxByType.celcius} ºC</p>
+          <p className="has-text-grey-light no-wrap">Max: {tempMaxByType.fahrenheit} ºF</p>
         </div>
       </div>
     </div>

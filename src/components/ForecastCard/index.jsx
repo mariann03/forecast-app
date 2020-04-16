@@ -9,15 +9,15 @@ export default function ForecastCard({ forecast }) {
   const { coord } = forecast
 
   return (
-    <div className="box common-background">
-      <div className="columns is-mobile is-multiline">
+    <div className="box common-background full-height">
+      <div className="columns is-mobile is-multiline is-vcentered is-marginless full-height">
         <div className="column min-width min-width-column">
           <figure className="image is-rounded">
             <Map className="margin-auto" {...coord} />
           </figure>
         </div>
         <div className="column min-width-column">
-          <table className="table centered-forecast-table no-background">
+          <table className="table no-background margin-auto">
             <tbody>
               <tr>
                 <th>Weather</th>

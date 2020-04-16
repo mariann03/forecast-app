@@ -25,12 +25,16 @@ body {
   background-color: #fff1;
 }
 
-.box.max-height {
-  max-height: 240px;
-}
-
 .max-width {
   max-width: 100%
+}
+
+.full-height {
+  height: 100%
+}
+
+.half-height {
+  height: 50%
 }
 
 .margin-auto {
