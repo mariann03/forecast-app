@@ -1,5 +1,5 @@
-# Users demo page
-Forecast app provides a national and local weather forecast for cities
+# Forecast app
+Forecast app provides a national and local weather forecast for cities built with React and deployed in glitch
 
 [Demo](https://mariann03-forecast-app.glitch.me/)
 
