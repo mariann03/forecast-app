@@ -5,7 +5,11 @@ import { fetchLocation } from '../../utils/fetchers'
 import './Input.css'
 import History from '../../contexts/History'
 
-async function redirectToCityPage(history, { address, locationId }) {
+async function redirectToCityPage(history, { address, search, locationId }) {
+  if (search) {
+    history.push(`/city${search}`)
+    return
+  }
   try {
     const { latitude: lat, longitude: lon } = await fetchLocation(locationId)
     history.push(`/city?q=${address.city}&lat=${lat}&lon=${lon}`)
@@ -38,7 +42,7 @@ function Item({ name, search, address, locationId, onClick, isActive }) {
 
   return (
     <div className="control has-icons-right">
-      <Link className={itemClass} to={`/city${search || name}`} onClick={handleOnClick}>
+      <Link className={itemClass} to={`/city${search || `?q=${name}`}`} onClick={handleOnClick}>
         {name}
       </Link>
       {search && (
