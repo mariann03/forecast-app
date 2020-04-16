@@ -35,7 +35,7 @@ export async function fetchCities(query) {
 }
 
 export async function fetchWeather({ q, lat, lon }) {
-  const ax = Axios.create({ baseURL: 'http://api.openweathermap.org/data/2.5/' })
+  const ax = Axios.create({ baseURL: 'https://api.openweathermap.org/data/2.5/' })
   if (!lat || !lon) {
     const { data } = await ax.get('weather', { params: { q, appid: REACT_APP_WEATHER_API_KEY } })
     return data
