@@ -1,0 +1,41 @@
+.hero-image {
+  background: black;
+}
+
+.hero-image::before {
+  content: '';
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: url('https://source.unsplash.com/1920x1080/?sky,weather');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: backgroundAnimation 3s;
+}
+
+.is-fullheight .container.hero-padding {
+  padding-bottom: 15%;
+  padding-right: 34%;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .is-fullheight .container.hero-padding {
+    padding: inherit;
+  }
+}
