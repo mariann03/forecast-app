@@ -1,6 +1,9 @@
 {
   "name": "forecast-app",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.x"
+  },
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
@@ -10,10 +13,12 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "serve": "^11.3.0",
     "universal-cookie": "^4.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check"
   },
