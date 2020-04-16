@@ -1,0 +1,42 @@
+.no-background {
+  background: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.day {
+  background: linear-gradient(to bottom, #b7eaff 0%, #94dfff 100%);
+}
+
+.night {
+  background: linear-gradient(to bottom, #020111 60%, #20202c 100%);
+}
+
+.day .common-background {
+  background-color: #fff;
+}
+.night .common-background {
+  background-color: #fff1;
+}
+
+.box.max-height {
+  max-height: 240px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.has-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.big-text {
+  font-size: 8rem !important;
+}
+
+.no-border {
+  border: none
+}
