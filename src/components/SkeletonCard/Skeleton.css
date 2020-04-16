@@ -1,0 +1,52 @@
+.image-skeleton {
+  height: 128px;
+  width: 128px;
+}
+
+.skeleton.text-1 {
+  margin-bottom: 21px !important;
+  padding: 0;
+  height: 1rem;
+  width: 300px;
+}
+
+.skeleton.text-2 {
+  margin-bottom: 21px !important;
+  padding: 0;
+  height: 1rem;
+  width: 200px;
+}
+
+.skeleton.text-3 {
+  margin-bottom: 21px !important;
+  padding: 0;
+  height: 1rem;
+  width: 250px;
+}
+
+.skeleton.text-4 {
+  padding: 0;
+  height: 1rem;
+  width: 140px;
+}
+
+@keyframes skeletonAnimation {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.skeleton-background {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: skeletonAnimation;
+  animation-timing-function: linear;
+  background-color: lightgray !important;
+}

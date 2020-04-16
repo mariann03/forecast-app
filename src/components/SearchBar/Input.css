@@ -1,0 +1,29 @@
+.full-width {
+  width: 100%;
+}
+
+.dropdown-padding {
+  padding: 10px 6px;
+}
+
+.dropdown-content.is-rounded {
+  border-radius: 10px;
+}
+
+.night input {
+  color: white;
+}
+
+.night input::placeholder {
+  color: dimgray;
+}
+
+button.icon,
+a.icon {
+  cursor: pointer;
+  pointer-events: all !important;
+}
+
+.link-item {
+  paddin-right: 26px;
+}

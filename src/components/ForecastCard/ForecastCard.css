@@ -1,0 +1,21 @@
+.map-max-height img {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+.centered-forecast-table {
+  margin: auto;
+  margin-top: 18px;
+}
+
+.night th,
+.night td {
+  color: white;
+}
+
+figure.is-rounded img {
+  border-radius: 4px;
+}
+.column.min-width-column {
+  min-width: 270px
+}
